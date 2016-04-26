@@ -1,0 +1,10 @@
+/* Your styles can go here. */
+input, select {
+    background-color: yellow;
+}
+
+.instructions {
+    border: 2px solid black;
+    padding: 10px;
+
+}
