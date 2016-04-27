@@ -6,7 +6,7 @@
     {% block content %}
     <h1>Application Form</h1>
         <p class="instructions">Thank you for you interest, may I have the following information?</p>
-            <form action="/application-response">
+            <form action="/application-response" method = "POST">
                 First Name: <input type="text" name="first_name"><br>
                 <b>Last Name:</b> <input type="text" name="last_name"><br>
                 May I have your salary requirement as a number value:<input type="text" name="salary"><br>

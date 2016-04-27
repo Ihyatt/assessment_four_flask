@@ -20,13 +20,13 @@ def application_form():
     
     return render_template("application-form.html")
 
-@app.route("/application-response")
+@app.route("/application-response", methods = ["POST"])
 def application_respone():
     """Returns user application information"""
-    first_name = request.args.get("first_name")
-    last_name = request.args.get("last_name")
-    salary = request.args.get("salary")
-    job_title = request.args.get("job_title")
+    first_name = request.form.get("first_name")
+    last_name = request.form.get("last_name")
+    salary = request.form.get("salary")
+    job_title = request.form.get("job_title")
 
     return render_template("application-response.html", first_name=first_name, last_name=last_name, salary=salary,job_title=job_title)
 
